@@ -10,6 +10,10 @@ machine:
     # MY_IMAGE_NAME is hard coded in this file. The project’s environment variables do not pass at this stage.
     DOCKER_IMAGE: legionco/forecasting-base-image:$CIRCLE_BRANCH-$CIRCLE_SHA1
 
+test:
+  override:
+    - echo "test"
+
 deployment:
 # An example for on environment
   staging:
